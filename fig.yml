@@ -1,5 +1,4 @@
 web:
-  command: mono PeerCastStation.exe
   build: ./
   ports:
     - '7144:7144'

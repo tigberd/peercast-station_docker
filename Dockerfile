@@ -13,4 +13,5 @@ WORKDIR /usr/src/src
 RUN wget http://www.pecastation.org/files/PeerCastStation-1.8.0.zip
 RUN unzip PeerCastStation-1.8.0.zip
 
-WORKDIR /usr/src/src/PeerCastStation-1.8.0
+ADD ./entrypoint.sh /entrypoint.sh
+CMD ["/entrypoint.sh"]
