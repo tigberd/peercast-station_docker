@@ -7,8 +7,8 @@ RUN apt-get update && \
       apt-get install -y mono-complete wget unzip && \
       apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
-RUN mkdir -p /usr/src/src
-WORKDIR /usr/src/src
+RUN mkdir -p /usr/local/src
+WORKDIR /usr/local/src
 
 RUN wget http://www.pecastation.org/files/PeerCastStation-1.8.0.zip
 RUN unzip PeerCastStation-1.8.0.zip
